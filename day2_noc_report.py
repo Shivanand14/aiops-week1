@@ -58,5 +58,3 @@ def print_report(servers):
 servers = load_servers("servers100.csv")
 print_report(servers)
 
-def risk_score(cpu, memory):
-    return round((cpu * 0.6) + (memory * 0.4), 1)
