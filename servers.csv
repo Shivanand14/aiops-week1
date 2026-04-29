@@ -1,0 +1,11 @@
+name,cpu,memory
+prod-db-01,92.5,88.0
+prod-web-01,45.0,99.0
+prod-cache-01,78.2,45.5
+neustar-oms-01,90.0,95.0
+prod-api-01,55.0,72.0
+prod-mail-01,65.0,85.0
+prod-auth-01,88.0,60.0
+prod-queue-01,40.0,40.0
+prod-billing-01,77.0,91.0
+prod-search-01,33.0,55.0
