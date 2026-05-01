@@ -22,6 +22,10 @@ Static thresholds miss dangerous servers. Risk scoring catches
 servers where combined CPU + memory pressure exceeds any single 
 P1 threshold. Found 14 under-classified servers in 100-server test.
 
+Memory exhaustion cascades to full outage via OOM killer.
+CPU spikes cause degradation but are often self-recovering.
+Therefore: prod-db-* servers weight memory at 0.6, CPU at 0.4.
+
 ## Author
 Shivanand Sanglage — 13 years IT Operations → AIOps Engineer
 https://www.linkedin.com/in/shivanand-sanglage-4a036350/
