@@ -26,6 +26,16 @@ Memory exhaustion cascades to full outage via OOM killer.
 CPU spikes cause degradation but are often self-recovering.
 Therefore: prod-db-* servers weight memory at 0.6, CPU at 0.4.
 
+**Features available at alert-fire time:**
+host          → which server has history of P1s?
+category      → CPU incidents escalate more than Disk
+hour          → 9am incidents escalate more than 3pm
+day_of_week   → Monday incidents after weekend batch jobs
+current_cpu   → actual metric value RIGHT NOW
+current_mem   → actual metric value RIGHT NOW
+past_p1_count → how many P1s has this host had before?
+time_since_last_incident → is this a repeat within 1 hour?
+
 ## Author
 Shivanand Sanglage — 13 years IT Operations → AIOps Engineer
 https://www.linkedin.com/in/shivanand-sanglage-4a036350/
